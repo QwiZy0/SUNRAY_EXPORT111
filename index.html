@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUN RAY EXPORT — Экспорт подсолнечного масла</title>
+    <link rel="icon" href="loga2.png" type="image/png" />
+    <meta name="description" content="SUN RAY EXPORT — экспорт подсолнечного масла РДВ, шротов, жмыхов и пеллет. Морские перевозки от 20 тонн." />
+    <meta name="keywords" content="подсолнечное масло оптом, экспорт масла, шрот, жмых, пеллеты, морские перевозки" />
+    <meta property="og:title" content="SUN RAY EXPORT — Экспорт подсолнечного масла" />
+    <meta property="og:description" content="Поставки масла РДВ, шротов, жмыхов и пеллет. Морские перевозки. Отгрузка от 20 тн." />
+    <meta property="og:image" content="loga2.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero-pattern">
+        <!-- Иконка-переключатель темы -->
+        <i data-feather="sun" class="hero-icon theme-toggle" onclick="toggleTheme();"></i>
+
+        <div class="hero-logo-image" onclick="event.stopPropagation(); document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">
+            <img src="loga2.png" alt="SUN RAY EXPORT — Подсолнечное масло">
+        </div>
+
+        <div class="hero-logo-text" onclick="event.stopPropagation(); document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">
+            <div class="logo-line-top">
+                <span class="logo-sun">SUN</span>
+                <span class="logo-ray">RAY</span>
+            </div>
+            <div class="logo-line-bottom">
+                <span class="logo-sub">PREMIUM SUNFLOWER OIL EXPORT</span>
+            </div>
+        </div>
+
+        <div class="hero-contacts">
+            <a href="tel:+79065057799" aria-label="Телефон">
+                <i data-feather="phone" class="hc-icon"></i>
+            </a>
+            <a href="mailto:Yustes1970@mail.ru" aria-label="Email">
+                <i data-feather="mail" class="hc-icon"></i>
+            </a>
+            <a href="https://wa.me/79065057799" target="_blank" aria-label="WhatsApp" class="wa">
+                <i data-feather="message-circle" class="hc-icon"></i>
+            </a>
+            <a href="viber://contact?number=79065057799" aria-label="Viber" class="viber">
+                <i data-feather="phone" class="hc-icon"></i>
+            </a>
+            <a href="https://imo.im/chat?number=79065057799" target="_blank" aria-label="Imo" class="imo">
+                <i data-feather="phone" class="hc-icon"></i>
+            </a>
+        </div>
+
+        <div class="hero-line"></div>
+
+        <nav class="hero-nav">
+            <a href="#products">Продукция</a>
+            <span class="nav-dot">•</span>
+            <a href="#certification">Сертификация</a>
+            <span class="nav-dot">•</span>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </section>
+
+    <!-- ===== О КОМПАНИИ ===== -->
+    <section class="about bg-pattern" id="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>
+                <span class="highlight">SUN RAY EXPORT</span> — международный экспортёр подсолнечного масла
+                и продуктов переработки масличных культур. Мы поставляем рафинированное
+                и нерафинированное масло высшего качества по всему миру.
+            </p>
+            <p>
+                Основной способ доставки — <span class="highlight">морские суда</span>, что позволяет нам отправлять
+                крупные партии товара в любую точку мира. Также работаем с железнодорожными
+                вагонами, автоцистернами и фурами. Отгрузка от 20 тонн.
+            </p>
+            <p>
+                Индивидуальный подход к каждому партнёру, полное сопровождение сделки
+                и контроль качества на всех этапах.
+            </p>
+
+            <!-- Слайдер -->
+            <div class="slider-wrapper">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slider-slide">
+                        <img src="suda.jpg" alt="Морские суда" />
+                    </div>
+                    <div class="slider-slide">
+                        <img src="fura.png" alt="Фуры" />
+                    </div>
+                    <div class="slider-slide">
+                        <img src="vagon.webp" alt="Железнодорожные вагоны" />
+                    </div>
+                    <div class="slider-slide">
+                        <img src="avto.webp" alt="Автоцистерны" />
+                    </div>
+                </div>
+
+                <button class="slider-btn prev" id="sliderPrev">‹</button>
+                <button class="slider-btn next" id="sliderNext">›</button>
+
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== СЕРТИФИКАЦИЯ ===== -->
+    <section class="certification bg-pattern" id="certification">
+        <h2>Сертификация и качество</h2>
+        <p class="sub">Вся продукция соответствует государственным стандартам</p>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="check-icon"></div>
+                <div class="text">
+                    <strong>ГОСТ 1129-2013</strong>
+                    <span class="cert-label">Масло подсолнечное</span>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="check-icon"></div>
+                <div class="text">
+                    <strong>ГОСТ 31760-2012</strong>
+                    <span class="cert-label">Масло соевое</span>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="check-icon"></div>
+                <div class="text">
+                    <strong>ГОСТ 31759-2012</strong>
+                    <span class="cert-label">Масло рапсовое</span>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="check-icon"></div>
+                <div class="text">
+                    <strong>ГОСТ 11048-95</strong>
+                    <span class="cert-label">Жмых рапсовый</span>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="check-icon"></div>
+                <div class="text">
+                    <strong>ГОСТ 11246-96</strong>
+                    <span class="cert-label">Шрот подсолнечный</span>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="check-icon"></div>
+                <div class="text">
+                    <strong>ГОСТ Р 53799-2010</strong>
+                    <span class="cert-label">Шрот соевый</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ПРОДУКЦИЯ ===== -->
+    <section class="products bg-pattern" id="products">
+        <div class="container">
+            <h2>Продукция</h2>
+            <p class="subhint">Полный ассортимент</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="fasovannoe">Фасованное</button>
+                <button class="filter-btn" data-filter="naliv">Налив</button>
+                <button class="filter-btn" data-filter="navalom">Навалом</button>
+            </div>
+
+            <div class="btn-request-wrapper">
+                <button class="btn-request" onclick="openModal();">
+                    <i data-feather="mail" class="btn-icon"></i>
+                    Запросить цену
+                </button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <div class="product-card" data-category="fasovannoe">
+                    <div class="cat">Масло РДВ</div>
+                    <h3>1 л</h3>
+                    <div class="desc">Рафинированное дезодорированное вымороженное, 1-й сорт, ГОСТ 1129-2013</div>
+                    <div class="meta"><span>Упаковка:</span> Коробка – 15 бут. / Паллета – 1080 бут.</div>
+                    <div class="badge">Фасованное</div>
+                </div>
+                <div class="product-card" data-category="fasovannoe">
+                    <div class="cat">Масло РДВ</div>
+                    <h3>1 л</h3>
+                    <div class="desc">Рафинированное дезодорированное вымороженное, 1-й сорт, ГОСТ 1129-2013</div>
+                    <div class="meta"><span>Упаковка:</span> Коробка – 9 бут. / Паллета – 648 бут.</div>
+                    <div class="badge">Фасованное</div>
+                </div>
+                <div class="product-card" data-category="fasovannoe">
+                    <div class="cat">Масло РДВ</div>
+                    <h3>2,0 л</h3>
+                    <div class="desc">Рафинированное дезодорированное вымороженное, 1-й сорт, ГОСТ 1129-2013</div>
+                    <div class="meta"><span>Упаковка:</span> Коробка – 9 бут. / Паллета – 540 бут.</div>
+                    <div class="badge">Фасованное</div>
+                </div>
+                <div class="product-card" data-category="fasovannoe">
+                    <div class="cat">Масло РДВ</div>
+                    <h3>3 л</h3>
+                    <div class="desc">Рафинированное дезодорированное вымороженное, 1-й сорт, ГОСТ 1129-2013</div>
+                    <div class="meta"><span>Упаковка:</span> Коробка – 6 бут. / Паллета – 360 бут.</div>
+                    <div class="badge">Фасованное</div>
+                </div>
+                <div class="product-card" data-category="fasovannoe">
+                    <div class="cat">Масло РДВ</div>
+                    <h3>5 л</h3>
+                    <div class="desc">Рафинированное дезодорированное вымороженное, 1-й сорт, ГОСТ 1129-2013</div>
+                    <div class="meta"><span>Упаковка:</span> Коробка – 3 бут. / Паллета – 225 бут.</div>
+                    <div class="badge">Фасованное</div>
+                </div>
+                <div class="product-card" data-category="naliv">
+                    <div class="cat">Масло РДВ</div>
+                    <h3>Нефасованное</h3>
+                    <div class="desc">Рафинированное дезодорированное вымороженное, 1-й сорт, ГОСТ 1129-2013</div>
+                    <div class="meta"><span>Фасовка:</span> налив / <span>Отгрузка:</span> авто, ЖД, море (от 20 тн)</div>
+                    <div class="badge">Налив</div>
+                </div>
+                <div class="product-card" data-category="naliv">
+                    <div class="cat">Масло подсолнечное</div>
+                    <h3>Нерафинированное</h3>
+                    <div class="desc">Высший сорт, ГОСТ 1129-2013, нефасованное</div>
+                    <div class="meta"><span>Фасовка:</span> налив / <span>Отгрузка:</span> авто, ЖД, море</div>
+                    <div class="badge">Налив</div>
+                </div>
+                <div class="product-card" data-category="naliv">
+                    <div class="cat">Масло соевое</div>
+                    <h3>Рафинированное</h3>
+                    <div class="desc">Высший сорт, ГОСТ 31760-2012</div>
+                    <div class="meta"><span>Фасовка:</span> налив / <span>Отгрузка:</span> авто, ЖД, море</div>
+                    <div class="badge">Налив</div>
+                </div>
+                <div class="product-card" data-category="naliv">
+                    <div class="cat">Масло рапсовое</div>
+                    <h3>Нерафинированное</h3>
+                    <div class="desc">1-й сорт, ГОСТ 31759-2012</div>
+                    <div class="meta"><span>Фасовка:</span> налив / <span>Отгрузка:</span> авто, ЖД, море</div>
+                    <div class="badge">Налив</div>
+                </div>
+                <div class="product-card" data-category="navalom">
+                    <div class="cat">Жмых</div>
+                    <h3>Рапсовый гранулированный</h3>
+                    <div class="desc">Протеин 37% на АСВ, ГОСТ 11048-95</div>
+                    <div class="meta"><span>Фасовка:</span> навалом / <span>Отгрузка:</span> от 120 т</div>
+                    <div class="badge">Навалом</div>
+                </div>
+                <div class="product-card" data-category="navalom">
+                    <div class="cat">Шрот</div>
+                    <h3>Подсолнечный тостированный гранулир.</h3>
+                    <div class="desc">Протеин 39,5% на АСВ, ГОСТ 11246-96</div>
+                    <div class="meta"><span>Фасовка:</span> навалом / <span>Отгрузка:</span> от 120 т</div>
+                    <div class="badge">Навалом</div>
+                </div>
+                <div class="product-card" data-category="navalom">
+                    <div class="cat">Шрот</div>
+                    <h3>Соевый кормовой тостир. гранулир.</h3>
+                    <div class="desc">Протеин 48–50% на АСВ, ГОСТ Р 53799-2010</div>
+                    <div class="meta"><span>Фасовка:</span> навалом / <span>Отгрузка:</span> от 60 т</div>
+                    <div class="badge">Навалом</div>
+                </div>
+                <div class="product-card" data-category="navalom">
+                    <div class="cat">Топливные пеллеты</div>
+                    <h3>Из лузги подсолнечника</h3>
+                    <div class="desc">Диаметр 6–8 мм, ТУ 16.29.14.192-100-94862185-2017</div>
+                    <div class="meta">
+                        <span>Фасовка:</span> мешки 15 кг, биг-биги 1000 кг, насыпь<br />
+                        <span>Отгрузка:</span> от 200 т, авто/ЖД
+                    </div>
+                    <div class="badge">Навалом</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="contact-section bg-pattern" id="contacts">
+        <h2>Контакты</h2>
+        <div class="info">
+            <a href="tel:+79065057799">
+                <i data-feather="phone" class="contact-icon"></i>
+                +7-906-505-77-99
+            </a>
+            <a href="mailto:Yustes1970@mail.ru">
+                <i data-feather="mail" class="contact-icon"></i>
+                Yustes1970@mail.ru
+            </a>
+            <a href="https://wa.me/79065057799" target="_blank" class="wa">
+                <i data-feather="message-circle" class="contact-icon"></i>
+                WhatsApp
+            </a>
+            <a href="viber://contact?number=79065057799" class="viber">
+                <i data-feather="phone" class="contact-icon"></i>
+                Viber
+            </a>
+            <a href="https://imo.im/chat?number=79065057799" target="_blank" class="imo">
+                <i data-feather="phone" class="contact-icon"></i>
+                Imo
+            </a>
+        </div>
+        <div class="note">Свяжитесь с нами для обсуждения поставок</div>
+    </section>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer>
+        © 2026 SUN RAY EXPORT — Экспорт подсолнечного масла
+    </footer>
+
+    <!-- ===== МОДАЛКА ===== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="btn-close" onclick="closeModal()">×</button>
+            <h3>Связаться с нами</h3>
+            <p>Оставьте контакты, и мы свяжемся с вами</p>
+            <form onsubmit="event.preventDefault(); alert('Заявка отправлена!'); closeModal();">
+                <label for="name">Имя</label>
+                <input type="text" id="name" required />
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" required />
+                <label for="comment">Комментарий</label>
+                <textarea id="comment"></textarea>
+                <button type="submit" class="btn-submit">Отправить</button>
+            </form>
+            <p class="modal-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </div>
+    </div>
+
+    <!-- ===== КНОПКИ ВНИЗУ ===== -->
+    <button class="btn-fixed btn-mail" onclick="openModal();" aria-label="Связаться">
+        <i data-feather="mail" class="mail-icon"></i>
+    </button>
+    <button class="btn-fixed btn-top" id="btnTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
