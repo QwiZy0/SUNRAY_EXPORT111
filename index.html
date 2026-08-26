@@ -317,16 +317,24 @@
             <button class="btn-close" onclick="closeModal()">×</button>
             <h3>Связаться с нами</h3>
             <p>Оставьте контакты, и мы свяжемся с вами</p>
-            <form onsubmit="event.preventDefault(); alert('Заявка отправлена!'); closeModal();">
+            <form class="js-form" method="post" action="./lib/form-handler.php">
                 <label for="name">Имя</label>
-                <input type="text" id="name" required />
+                <input type="text" id="name" name="name" required />
                 <label for="phone">Телефон</label>
-                <input type="tel" id="phone" required />
+                <input type="tel" id="phone" name="phone" required />
                 <label for="comment">Комментарий</label>
-                <textarea id="comment"></textarea>
+                <textarea id="comment" name="comment"></textarea>
                 <button type="submit" class="btn-submit">Отправить</button>
             </form>
             <p class="modal-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </div>
+    </div>
+    <div class="modal-overlay" id="successModalOverlay">
+        <div class="modal">
+            <button class="btn-close" onclick="closeSuccessModal()">×</button>
+            <h3>Спасибо за заявку!</h3>
+            <p>Мы получили ваши данные и свяжемся с вами в ближайшее время.</p>
+            <button class="btn-submit" onclick="closeSuccessModal()">Отлично</button>
         </div>
     </div>
 
@@ -337,5 +345,6 @@
     <button class="btn-fixed btn-top" id="btnTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
 
     <script src="script.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
