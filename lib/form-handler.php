@@ -24,17 +24,17 @@ try {
 	$mail->isSMTP();
 	$mail->Host = 'smtp.mail.ru'; 
 	$mail->SMTPAuth = true;
-	$mail->Username = 'yegor.yegorenkov2006@bk.ru'; //изменить почту
+	$mail->Username = 'Yustes1970@mail.ru'; //изменить почту
 
-	$mail->Password = 'Ov9A8mNAHT2SjDHfBQLy';//сменить
+	$mail->Password = '';//пароль приложения (создать)
 
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 	$mail->SMTPAutoTLS = false;
 	$mail->Port = 465;
 	$mail->CharSet = 'UTF-8';
 
-	$mail->setFrom('yegor.yegorenkov2006@bk.ru', 'Запрос цены с сайта');
-	$mail->addAddress('egorexqw@yandex.ru', 'Получатель'); //изменить почту получателя на клиента
+	$mail->setFrom('Yustes1970@mail.ru', 'Запрос цены с сайта');//от кого
+	$mail->addAddress('Yustes1970@mail.ru', 'Получатель'); //кому
 
 	$mail->isHTML(true);
 	$mail->Subject = 'Запрос цены с сайта';
