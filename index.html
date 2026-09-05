@@ -10,6 +10,10 @@
     <meta property="og:title" content="SUN RAY EXPORT — Экспорт подсолнечного масла" />
     <meta property="og:description" content="Поставки масла РДВ, шротов, жмыхов и пеллет. Морские перевозки. Отгрузка от 20 тн." />
     <meta property="og:image" content="loga2.png" />
+    <link rel="icon" href="https://sunray-export.com/favicon.ico" sizes="any" />
+    <link rel="icon" href="https://sunray-export.com/loga2.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://sunray-export.com/loga2.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -109,53 +113,53 @@
         </div>
     </section>
 
-    <!-- ===== СЕРТИФИКАЦИЯ ===== -->
+<!-- ===== СЕРТИФИКАЦИЯ ===== -->
     <section class="certification bg-pattern" id="certification">
         <h2>Сертификация и качество</h2>
         <p class="sub">Вся продукция соответствует государственным стандартам</p>
         <div class="cert-grid">
-            <div class="cert-item">
+            <a href="https://www.kurant1.ru/gost1129.pdf" target="_blank" class="cert-item" data-gost="ГОСТ 1129-2013">
                 <div class="check-icon"></div>
                 <div class="text">
                     <strong>ГОСТ 1129-2013</strong>
                     <span class="cert-label">Масло подсолнечное</span>
                 </div>
-            </div>
-            <div class="cert-item">
+            </a>
+            <a href="https://files.stroyinf.ru/Data2/1/4293783/4293783187.pdf" target="_blank" class="cert-item" data-gost="ГОСТ 31760-2012">
                 <div class="check-icon"></div>
                 <div class="text">
                     <strong>ГОСТ 31760-2012</strong>
                     <span class="cert-label">Масло соевое</span>
                 </div>
-            </div>
-            <div class="cert-item">
+            </a>
+            <a href="https://files.stroyinf.ru/Data2/1/4293782/4293782190.pdf" target="_blank" class="cert-item" data-gost="ГОСТ 31759-2012">
                 <div class="check-icon"></div>
                 <div class="text">
                     <strong>ГОСТ 31759-2012</strong>
                     <span class="cert-label">Масло рапсовое</span>
                 </div>
-            </div>
-            <div class="cert-item">
+            </a>
+            <a href="https://files.stroyinf.ru/Data2/1/4294839/4294839910.pdf" target="_blank" class="cert-item" data-gost="ГОСТ 11048-95">
                 <div class="check-icon"></div>
                 <div class="text">
                     <strong>ГОСТ 11048-95</strong>
                     <span class="cert-label">Жмых рапсовый</span>
                 </div>
-            </div>
-            <div class="cert-item">
+            </a>
+            <a href="https://files.stroyinf.ru/Data2/1/4294839/4294839807.pdf" target="_blank" class="cert-item" data-gost="ГОСТ 11246-96">
                 <div class="check-icon"></div>
                 <div class="text">
                     <strong>ГОСТ 11246-96</strong>
                     <span class="cert-label">Шрот подсолнечный</span>
                 </div>
-            </div>
-            <div class="cert-item">
+            </a>
+            <a href="https://files.stroyinf.ru/Data2/1/4293817/4293817731.pdf" target="_blank" class="cert-item" data-gost="ГОСТ Р 53799-2010">
                 <div class="check-icon"></div>
                 <div class="text">
                     <strong>ГОСТ Р 53799-2010</strong>
                     <span class="cert-label">Шрот соевый</span>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -312,23 +316,32 @@
     </footer>
 
     <!-- ===== МОДАЛКА ===== -->
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal">
-            <button class="btn-close" onclick="closeModal()">×</button>
-            <h3>Связаться с нами</h3>
-            <p>Оставьте контакты, и мы свяжемся с вами</p>
-            <form class="js-form" method="post" action="./lib/form-handler.php">
-                <label for="name">Имя</label>
-                <input type="text" id="name" name="name" required />
-                <label for="phone">Телефон</label>
-                <input type="tel" id="phone" name="phone" required />
-                <label for="comment">Комментарий</label>
-                <textarea id="comment" name="comment"></textarea>
-                <button type="submit" class="btn-submit">Отправить</button>
-            </form>
-            <p class="modal-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-        </div>
+<!-- ===== МОДАЛКА ===== -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="btn-close" onclick="closeModal()">×</button>
+        <h3>Связаться с нами</h3>
+        <p>Оставьте контакты, и мы свяжемся с вами</p>
+        <form class="js-form" method="post" action="./lib/form-handler.php">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required />
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment"></textarea>
+            <button type="submit" class="btn-submit">Отправить</button>
+        </form>
+        <p class="modal-note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank" class="privacy-link">политикой конфиденциальности</a></p>
     </div>
+</div>
+<div class="modal-overlay" id="successModalOverlay">
+    <div class="modal">
+        <button class="btn-close" onclick="closeSuccessModal()">×</button>
+        <h3>Спасибо за заявку!</h3>
+        <p>Мы получили ваши данные и свяжемся с вами в ближайшее время.</p>
+        <button class="btn-submit" onclick="closeSuccessModal()">Отлично</button>
+    </div>
+</div>
     <div class="modal-overlay" id="successModalOverlay">
         <div class="modal">
             <button class="btn-close" onclick="closeSuccessModal()">×</button>

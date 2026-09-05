@@ -1379,3 +1379,73 @@ footer {
         height: 8px;
     }
 }
+/* ===== АНИМАЦИЯ ДЛЯ КЛИКАБЕЛЬНЫХ ГОСТОВ ===== */
+.cert-item {
+    transition: border-color 0.3s, transform 0.2s, box-shadow 0.2s, background 0.2s;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cert-item:hover {
+    border-bottom-color: rgba(200, 161, 83, 0.50);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(200, 161, 83, 0.15);
+    background: rgba(200, 161, 83, 0.05);
+}
+
+.cert-item .check-icon {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cert-item:hover .check-icon {
+    transform: scale(1.15);
+    box-shadow: 0 4px 14px rgba(200, 161, 83, 0.50);
+}
+
+.cert-item strong {
+    transition: color 0.3s;
+}
+
+.cert-item:hover strong {
+    color: #c8a153;
+}
+
+.cert-item .cert-label {
+    transition: color 0.3s;
+}
+
+.cert-item:hover .cert-label {
+    color: #777;
+}
+
+/* Тёмная тема */
+.dark-theme .cert-item:hover {
+    background: rgba(200, 161, 83, 0.10);
+    border-bottom-color: rgba(200, 161, 83, 0.40);
+}
+
+.dark-theme .cert-item:hover strong {
+    color: #c8a153;
+}
+
+.dark-theme .cert-item:hover .cert-label {
+    color: #bbb;
+}
+.privacy-link {
+    color: #c8a153;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.privacy-link:hover {
+    color: #b0893f;
+}
+
+.dark-theme .privacy-link {
+    color: #d4b063;
+}
+
+.dark-theme .privacy-link:hover {
+    color: #e8c87a;
+}
